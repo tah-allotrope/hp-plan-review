@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hai Phong Plan Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single review column; each finding = verdict chip + one visual + page screenshot */
+:root{--bg:#f6f7f5;--panel:#ffffff;--fg:#1b2420;--muted:#5d6a63;--line:#d9dfdb;--accent:#0f7a6c;--bad:#c2410c;--warn:#b7791f;--ok:#2f855a;
+--display:"Be Vietnam Pro",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121816;--panel:#1a2220;--fg:#e3ebe7;--muted:#9aa9a2;--line:#2c3733;--accent:#3cc2ae;--bad:#f08a5d;--warn:#e6b75a;--ok:#6fcf97;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121816;--panel:#1a2220;--fg:#e3ebe7;--muted:#9aa9a2;--line:#2c3733;--accent:#3cc2ae;--bad:#f08a5d;--warn:#e6b75a;--ok:#6fcf97;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--display);line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+main{max-width:980px;margin:0 auto;display:grid;gap:28px}
+h1{font-size:1.7rem;margin:0;text-wrap:balance}h2{font-size:1.15rem;margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0}
+a{color:var(--accent)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.kpi b{display:block;font-family:var(--mono);font-size:1.45rem;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:.85rem}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:12px;min-width:0}
+.chip{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid currentColor;margin-right:6px}
+.bad{color:var(--bad)}.warn{color:var(--warn)}.ok{color:var(--ok)}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;align-items:start}
+@media (max-width:720px){.two{grid-template-columns:1fr}}
+.two>*{min-width:0}
+figure{margin:0}figure img{border:1px solid var(--line);border-radius:6px;display:block;width:100%}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.86rem;font-variant-numeric:tabular-nums}
+th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:600}
+td.mono{font-family:var(--mono)}
+ol,ul{margin:0;padding-left:20px}li{margin:3px 0}
+svg text{fill:var(--fg);font-family:var(--mono);font-size:11px}
+svg .mut{fill:var(--muted)}
+.foot{font-size:.82rem;color:var(--muted)}
+</style>
+</head><body>
+<main>
+<header>
+<h1>Hai Phong Decarbonization Plan 2026–2030 · draft review</h1>
+<p class="sub">Draft "VIE_DRAFT – Kế hoạch giảm phát thải HP 2026-2030", exported 22 Nov 2026 (172 pp). Rule agreed with DAE: <b>2030 cap = BAU 2030 − (2020 baseline × 43.5%)</b>. · <a href="https://docs.google.com/document/d/1FLz4olDLRN1n4awD0Ji5dmO8V77tbgkN4Yxa4wLONfs/edit">Open draft</a> · <a href="https://docs.google.com/spreadsheets/d/1uywie-Skl_o-v4yKX8J-XXmrRxFhhmWE/edit">BAU workbook v6</a></p>
+</header>
+
+<div class="kpis">
+<div class="kpi"><b class="ok">17.61 Mt</b><span>Required cut = 40.48 Mt (2020) × 43.5%, taken off BAU 2030. Report gets this right.</span></div>
+<div class="kpi"><b class="ok">25.76 Mt</b><span>2030 cap = BAU 43.37 − 17.61. Bảng 55 matches the DAE rule in all 5 rows.</span></div>
+<div class="kpi"><b class="warn">4.08 Mt</b><span>23% of target with no quantified measure (AFOLU, waste, other energy)</span></div>
+<div class="kpi"><b class="bad">50 / 78</b><span>solutions rated HIGH or UNSUPPORTED vs standards &amp; real cases</span></div>
+<div class="kpi"><b class="bad">10</b><span>high-severity QA issues out of 45 (calc, findings, workbook)</span></div>
+</div>
+
+<section>
+<h2><span class="chip ok">OK</span>DAE rule: Bảng 55 is right; show the formula</h2>
+<div class="two">
+<div>
+<svg viewBox="0 0 520 230" width="100%" role="img" aria-label="BAU 2030 split into 2030 cap and required cut, by sector">
+<text x="0" y="12" class="mut">BAU 2030 = cap + cut (2020 × 43.5%), Mt CO₂e</text>
+<g transform="translate(70,26)">
+<!-- scale: 1 Mt = 9.5px; BAU 43.37 -> 412px -->
+<text x="-6" y="18" text-anchor="end">City</text>
+<rect x="0" y="6" width="245" height="16" fill="var(--ok)"/><rect x="245" y="6" width="167" height="16" fill="var(--accent)" opacity=".45"/><text x="4" y="36">cap 25.76 + cut 17.61 = BAU 43.37</text>
+<text x="-6" y="62" text-anchor="end">Energy</text>
+<rect x="0" y="50" width="195" height="16" fill="var(--ok)"/><rect x="195" y="50" width="126" height="16" fill="var(--accent)" opacity=".45"/><text x="325" y="62">20.49 + 13.30</text>
+<text x="-6" y="96" text-anchor="end">IPPU</text>
+<rect x="0" y="84" width="28" height="16" fill="var(--ok)"/><rect x="28" y="84" width="18" height="16" fill="var(--accent)" opacity=".45"/><text x="50" y="96">2.95 + 1.89</text>
+<text x="-6" y="130" text-anchor="end">AFOLU</text>
+<rect x="0" y="118" width="5" height="16" fill="var(--ok)"/><rect x="5" y="118" width="11" height="16" fill="var(--accent)" opacity=".45"/><text x="20" y="130" style="fill:var(--bad)">0.52 + 1.18 (cap 70% below BAU)</text>
+<text x="-6" y="164" text-anchor="end">Waste</text>
+<rect x="0" y="152" width="17" height="16" fill="var(--ok)"/><rect x="17" y="152" width="12" height="16" fill="var(--accent)" opacity=".45"/><text x="33" y="164">1.80 + 1.24</text>
+</g>
+<rect x="300" y="204" width="10" height="10" fill="var(--ok)"/><text x="314" y="213">2030 cap</text>
+<rect x="390" y="204" width="10" height="10" fill="var(--accent)" opacity=".45"/><text x="404" y="213">cut</text>
+</svg>
+<ol>
+<li>Bảng 55 (p152): all five rows equal BAU 2030 (Bảng 44) − 2020 × 43.5%. Keep. Add a "BAU 2030" column and a formula note so a reader can check it.</li>
+<li>AFOLU cap 516,454.88 is 70% below BAU (19% of 2020), with no quantified AFOLU measure.</li>
+<li>Cement cap (p157): 5,906,881.00 − 2,422,454.90 = 3,484,426.10; draft prints 3,484,425.70 (0.40 t, from summing the measures).</li>
+<li>Bảng 56 PA2 (p154): 185,810 → 185,610 and 5,568,100 → 5,568,300; PA2 sums 8,992,506 today.</li>
+<li>Stop calling 2025 "năm cơ sở" (p123, 125, 164, 169). The 43.5% applies to 2020; 2025 is only the BAU starting point.</li>
+<li>Workbook <code>Tổng hợp!H8</code> = E8 × 0.565 is labelled "lượng cần giảm" and its BAU (68.61 Mt) ≠ draft (43.37 Mt). Fix before sharing v6.</li>
+</ol>
+</div>
+<figure><img src="img/p152.png" alt="Draft page 152, Bảng 55"><figcaption>p152 · Bảng 55: third column = BAU 2030 − 2020 × 43.5%, as agreed with DAE</figcaption></figure>
+</div>
+</section>
+
+<section>
+<h2><span class="chip warn">Gap</span>Quantified plan covers 13.52 of 17.61 Mt</h2>
+<div class="two">
+<div>
+<svg viewBox="0 0 520 120" width="100%" role="img" aria-label="Coverage of the 17.61 Mt target">
+<!-- 1 Mt = 28px; 17.61 -> 493 -->
+<rect x="0" y="10" width="252" height="26" fill="var(--accent)"/><text x="4" y="52">Thermal 8.99</text>
+<rect x="252" y="10" width="68" height="26" fill="var(--accent)" opacity=".75"/><text x="256" y="66">Cement 2.42</text>
+<rect x="320" y="10" width="59" height="26" fill="var(--accent)" opacity=".55"/><text x="324" y="80">Steel 2.11</text>
+<rect x="379" y="10" width="114" height="26" fill="none" stroke="var(--bad)" stroke-dasharray="4 3"/><text x="384" y="28" class="bad" style="fill:var(--bad)">4.08 none</text>
+<text x="0" y="108" class="mut">Unquantified: AFOLU 1.18 · Waste 1.24 · other energy 1.56 · other IPPU 0.09 Mt</text>
+</svg>
+<ul>
+<li>Bảng 59 (p159–160) lists 8 measures with zero tonnes. Quantify AWD, biogas, forest and WtE before claiming 100%.</li>
+<li>7.89 Mt (58%) of the quantified plan is grid displacement (solar, offshore wind, WHR). The inventory is territorial, so say how those tonnes count.</li>
+</ul>
+</div>
+<figure><img src="img/p159.png" alt="Draft page 159"><figcaption>p159 · 13,522,717 t quantified + 4,084,956 t "remaining sectors"</figcaption></figure>
+</div>
+</section>
+
+<section>
+<h2><span class="chip bad">Risk</span>Solution estimates vs standards and real cases</h2>
+<div class="two">
+<div>
+<svg viewBox="0 0 520 60" width="100%" role="img" aria-label="Ratings of 78 solutions">
+<!-- 78 -> 520px, 6.667px each -->
+<rect x="0" y="6" width="93" height="22" fill="var(--ok)"/><rect x="93" y="6" width="80" height="22" fill="var(--warn)"/><rect x="173" y="6" width="100" height="22" fill="var(--bad)"/><rect x="273" y="6" width="233" height="22" fill="var(--bad)" opacity=".5"/><rect x="506" y="6" width="14" height="22" fill="var(--line)"/>
+<text x="2" y="44">OK 14</text><text x="95" y="44">LOW 12</text><text x="175" y="44">HIGH 15</text><text x="275" y="44">UNSUPPORTED 35</text><text x="470" y="58" class="mut">other 2</text>
+</svg>
+<div class="tbl"><table>
+<tr><th>Item (page)</th><th>Report</th><th>Benchmark</th><th>Impact</th></tr>
+<tr><td>2,000 MW offshore wind (p154)</td><td class="mono">48% CF</td><td class="mono">35–38% CF¹</td><td class="mono bad">−1.2 to −1.8 Mt</td></tr>
+<tr><td>"42.5%" fuel switch (p154)</td><td class="mono">6.15 Mt</td><td class="mono">= 29.7%, plug</td><td class="mono bad">2.66 Mt unexplained</td></tr>
+<tr><td>Clinker 83→65% + LC3 (p156)</td><td class="mono">both counted</td><td class="mono">same 18 pts</td><td class="mono bad">up to 1.3 Mt double</td></tr>
+<tr><td>737 MW wind for steel (p158)</td><td class="mono">2.05 Mt</td><td class="mono">same output as above</td><td class="mono bad">double count</td></tr>
+<tr><td>200 MW solar (p154)</td><td class="mono">1,409 kWh/kWp</td><td class="mono">900–1,100²</td><td class="mono warn">−41 to −67 kt</td></tr>
+<tr><td>Industrial EE, I.23 (Bảng 50)</td><td class="mono">1.85 Mt</td><td class="mono">0.75 Mt at 10%</td><td class="mono bad">−1.1 Mt</td></tr>
+<tr><td>Forest protection F1+F2 (Bảng 52)</td><td class="mono">822 kt</td><td class="mono">≈52 kt</td><td class="mono bad">−0.72 Mt</td></tr>
+<tr><td>Cement WHR 16 MW (p156)</td><td class="mono">5,420 t/MW</td><td class="mono">Bút Sơn 12 MW³</td><td class="mono ok">OK</td></tr>
+</table></div>
+<p class="foot">¹ <a href="https://media02.depp3.vn/Images/User/ngocanh/2026/5/viet-nam-technology-catalogue-2026-power-generation_eng.pdf">Viet Nam Technology Catalogue 2026</a> · ² <a href="https://vepg.vn/wp-content/uploads/2020/09/25.05.21-GIZ-PPP-solar-guidlines-EN.pdf">GIZ/VEPG solar guideline</a> · ³ <a href="https://vneec.gov.vn/tin-tuc/activities/t42729/vicem-but-son-saves-121-7-billion-vnd-by-utilizing-waste-heat-for-power-generation">VNEEC, VICEM Bút Sơn</a> · grid EF <a href="https://dcc.mae.gov.vn/Pages/chi-tiet-tin-DCC.aspx?ItemID=3505">MAE/DCC</a> · LC3 <a href="https://vietnam.un.org/en/321753-advancing-low-carbon-innovation-viet-nam%E2%80%99s-cement-sector-through-lc3-knowledge-exchange">UNIDO 2024</a></p>
+</div>
+<figure><img src="img/p154.png" alt="Draft page 154, Bảng 56"><figcaption>p154 · power options; PA2 sums 8,992,506, not 8,992,306</figcaption></figure>
+</div>
+</section>
+
+<section>
+<h2><span class="chip bad">QA</span>Calc and findings errors to clear before Monday</h2>
+<div class="two">
+<div class="tbl"><table>
+<tr><th>Page</th><th>Issue</th><th>Fix</th></tr>
+<tr><td>p97 Bảng 33</td><td>AFOLU HP 2020 = 763.99</td><td class="mono">763,980</td></tr>
+<tr><td>p108 §3.2.5.1</td><td>AFOLU 1,651,250.22</td><td class="mono">1,682,456.65</td></tr>
+<tr><td>p150 §5.2.5</td><td>"hơn 6 triệu tấn", energy 99.94%</td><td class="mono">13.51 Mt, 85.6%</td></tr>
+<tr><td>p146 Bảng 50</td><td>total 11,563,491</td><td class="mono">rows sum 11,655,514</td></tr>
+<tr><td>p103 Bảng 38</td><td>3B share missing</td><td class="mono">−9.13%</td></tr>
+<tr><td>p98 Bảng 35</td><td>columns off by 10 t</td><td class="mono">40,477,420.29</td></tr>
+<tr><td>p99 Bảng 36</td><td>"30,490,161,34"</td><td class="mono">30.490.161,34</td></tr>
+<tr><td>Workbook v6</td><td>BAU 2030 = 68.61 Mt</td><td class="mono">draft: 43.37 Mt</td></tr>
+<tr><td>TOC</td><td>all page numbers 1–2 low</td><td>regenerate</td></tr>
+<tr><td>Text</td><td>"Giải định", "ban hàng", "KKNK", "thải thải", "NĐ-C"</td><td>typos</td></tr>
+</table></div>
+<div style="display:grid;gap:10px">
+<figure><img src="img/p97.png" alt="Draft page 97, Bảng 33"><figcaption>p97 · Bảng 33, AFOLU cell 763.99</figcaption></figure>
+<figure><img src="img/p150.png" alt="Draft page 150"><figcaption>p150 · "99,94%" energy share</figcaption></figure>
+</div>
+</div>
+<p class="foot">Email thread "phương án giảm phát thải – tính theo 2020 mới" (20–22 Nov): The team aims to resend to DAE on Monday. The 22 Nov Gemini list is still open: p97 cell, Bảng 35 gap and the p108 figure remain.</p>
+</section>
+
+<section>
+<h2><span class="chip warn">Attachments</span>Gemini review lists (21 + 22 Nov) and summary report</h2>
+<svg viewBox="0 0 520 56" width="100%" role="img" aria-label="112 Gemini items: 67 open, 37 fixed, 8 not errors">
+<rect x="0" y="6" width="311" height="22" fill="var(--bad)"/><rect x="311" y="6" width="172" height="22" fill="var(--ok)"/><rect x="483" y="6" width="37" height="22" fill="var(--warn)"/>
+<text x="2" y="44">OPEN 67</text><text x="313" y="44">FIXED 37</text><text x="440" y="54">not errors 8</text>
+</svg>
+<div class="two">
+<div>
+<h2 style="font-size:1rem">Where Gemini is wrong (21 rows)</h2>
+<p class="foot"><b class="ok">Gemini right:</b> keep Bảng 55 as BAU − cut and state the formula; AFOLU 516,454.88 matches BAU − cut. Both fit the DAE rule.</p>
+<div class="tbl"><table>
+<tr><th>Gemini says</th><th>Actually</th><th>Sev.</th></tr>
+<tr><td>Bảng 50 rows sum 11,563,491</td><td>That is the printed total; rows sum 11,655,514</td><td class="bad">High</td></tr>
+<tr><td>Without duplicate row: 11,438,501</td><td>11,530,524</td><td class="bad">High</td></tr>
+<tr><td>Bảng 33 error carries 1 t to Bảng 35</td><td>Gap is 11 t</td><td class="warn">Med</td></tr>
+<tr><td>Rename Bảng 18.3 → 18.4</td><td>Would duplicate 18.4</td><td class="warn">Med</td></tr>
+<tr><td>Wrong table numbers (Bảng 31/41/42/30/22)</td><td>Bảng 33/43/44/32/50–53</td><td class="warn">Med</td></tr>
+<tr><td>All 22 Nov page refs</td><td>1–2 pages low</td><td class="warn">Med</td></tr>
+<tr><td>10 items re-reported</td><td>already fixed or never true (TOC Ch.2, dup Bảng 30/56, PHỤ LỤC 3…)</td><td>Low</td></tr>
+</table></div>
+</div>
+<div>
+<h2 style="font-size:1rem">Summary report (Báo cáo tóm tắt, 21 Nov)</h2>
+<ul>
+<li><b class="ok">OK:</b> 2030 "mức trần" 25,760,330.06 matches the DAE rule (BAU − 2020 × 43.5%).</li>
+<li><b class="bad">Critical:</b> "Năng lượng khác 4,30 triệu" double-counts 2.74 Mt already in the cement and steel targets. Residual blocks sum 6.72 Mt vs 4.08 Mt stated.</li>
+<li><b class="warn">High:</b> population 4.66 million is not in the draft (4,149,871).</li>
+<li>Waste: draft says collection 100%, treatment ≥40%, not "xử lý 100%".</li>
+<li>LC3 is limestone calcined clay, not "đất sét trắng" (also p156–157).</li>
+</ul>
+<h2 style="font-size:1rem">New in draft (not in first pass)</h2>
+<ul>
+<li><b class="warn">High:</b> every page header says "tầm nhìn đến năm 2030". Should be 2050.</li>
+<li>Bảng 32 IPPU row copies the Services row. Rice 94,639 vs 159,353 ha.</li>
+<li>Forest 27,662 / 27,659 / 22,249.65 ha with no note explaining the difference.</li>
+<li>§3.2.2: cement IPPU explained as fuel burning. It is CaCO₃ calcination (fuel combustion is 1A2f).</li>
+<li>Bảng 50: EV row 19 = row 26 (124,990 t duplicated).</li>
+</ul>
+</div>
+</div>
+</section>
+
+<p class="foot">Method: 3 Codex lanes (deepseek-v4.1-flash) on the 22 Nov PDF/text export and BAU workbook v6. Each figure was recomputed with exact decimals. I re-checked p97, p150, p152 and p154 against the PDF myself. Ratings from standards and real cases are the lanes' findings. Only p152–p154 were cross-checked, so treat the rest as leads. Full files: <code>research/2026-11-22-dae2030/dae2030-{dae435,projver,qa,att}.md</code>. I re-checked the page header and the summary report figures myself.</p>
+</main>
+
+</body></html>
